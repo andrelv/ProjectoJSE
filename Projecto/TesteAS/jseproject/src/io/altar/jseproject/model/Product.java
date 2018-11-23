@@ -1,44 +1,37 @@
 package io.altar.jseproject.model;
 
-public class Product {
-	private int id;
-	private int shelf;
-	private int desconto;
-	private int iva;
+public class Product extends Entity{
+
+	private long shelf;
+	private double desconto;
+	private double iva;
 	private double preco;
 	
 	
-	public Product(int id, int shelf, int desconto, int iva, double preco) {
-		//super(); para extender classes
-		this.id = id;
+	public Product(long shelf, double desconto, double iva, double preco) {
+				
 		this.shelf = shelf;
 		this.desconto = desconto;
 		this.iva = iva;
 		this.preco = preco;
 	}
 	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public int getShelf() {
+	public long getShelf() {
 		return shelf;
 	}
-	public void setShelf(int shelf) {
+	public void setShelf(long shelf) {
 		this.shelf = shelf;
 	}
-	public int getDesconto() {
+	public double getDesconto() {
 		return desconto;
 	}
-	public void setDesconto(int desconto) {
+	public void setDesconto(double desconto) {
 		this.desconto = desconto;
 	}
-	public int getIva() {
+	public double getIva() {
 		return iva;
 	}
-	public void setIva(int iva) {
+	public void setIva(double iva) {
 		this.iva = iva;
 	}
 	public double getPreco() {
@@ -46,6 +39,11 @@ public class Product {
 	}
 	public void setPreco(double preco) {
 		this.preco = preco;
+	}
+
+	@Override
+	public String toString() {
+		return "Product "+this.getId()+" [shelf=" + shelf + ", desconto=" + desconto + ", iva=" + iva + ", preco=" + preco + "]";
 	}
 	
 	
