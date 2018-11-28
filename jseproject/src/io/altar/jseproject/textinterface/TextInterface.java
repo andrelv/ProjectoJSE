@@ -1,13 +1,9 @@
 package io.altar.jseproject.textinterface;
 
-import java.util.Calendar;
 import java.util.Collection;
 import java.util.Scanner;
-import java.util.Set;
-
-import io.altar.jseproject.model.Shelf;
-import repositories.ProductRepository;
-import repositories.ShelfRepository;
+import io.altar.jseproject.repositories.ProductRepository;
+import io.altar.jseproject.repositories.ShelfRepository;
 import io.altar.jseproject.model.Product;
 
 public class TextInterface {
